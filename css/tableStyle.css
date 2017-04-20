@@ -1,0 +1,30 @@
+.odd{
+    background-color: #333333;
+    color: white;
+}
+td {
+    padding: 20px 20px;
+    background-color: #d4cbcd;
+    border-left: 2px solid #d4cbcd;
+
+
+}
+td a:visited {
+    text-decoration: none;
+    color: dimgray;
+}
+
+
+
+.th {
+
+    width: 100px;
+    background-color: gray;
+
+}
+
+.thumb a:hover {
+    color: red;
+
+
+}

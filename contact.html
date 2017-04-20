@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserveringsite | Home </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+   <!-- Google Maps API -->
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(51.900092, 4.498393),
+                zoom: 18,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var marker = new google.maps.Marker({
+
+                position: new google.maps.LatLng(51.900092, 4.498393),
+                map: map,
+                title: "Berna's Hair & Beauty Salon"
+            });
+
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+</head>
+<body>
+
+<div class="header">
+
+    <div id="titel">Berna's Hair & Beauty Salon</div>
+
+</div>
+<div class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="informatie.html">Informatie</a></li>
+        <li><a href="reserveren.php">Reserveren</a></li>
+        <li><a href="Prijzen.html">Prijzen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+</div>
+<div class="socialmedia">
+    <a href="https://www.facebook.com/bernas.hairenbeautysalon?fref=ts" target="_blank"><img id="facebook" src="img/facebook.png"></a>
+    <a href="https://www.instagram.com/bernashairbeauty/" target="_blank"><img id="insta" src="img/instagram.png"></a>
+</div>
+
+
+<div class="content">
+
+
+    <div class="openingstijden">
+        <h2 style="font-family: Arial;"> Openingstijden</h2>
+        <table style="width: 40%;">
+            <tr>
+                <td>Maandag</td>
+                <td>   Gesloten</td>
+            </tr>
+            <tr>
+                <td>Dinsdag</td>
+                <td>   9:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Woensdag</td>
+                <td>   9:00 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Donderdag</td>
+                <td>   9:00- 17:30</td>
+            </tr>
+            <tr>
+                <td>Vrijdag</td>
+                <td>   9:00 - 19:00</td>
+            </tr>
+            <tr>
+                <td>Zaterdag</td>
+                <td> 9:00 - 18:00</td>
+
+
+            </tr>
+        </table>
+    </div>
+
+    <div class="adresgegevens">
+        <h2 style="font-family:Arial;  ">Ons Adres</h2>
+        <p>
+            Paul Krügerstraat 121-B <br>
+            3072 GG Rotterdam<br>
+            T. 06 81869009   <br>
+        </p>
+    </div>
+
+    <div id="map"></div>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
